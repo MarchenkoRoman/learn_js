@@ -1,3 +1,152 @@
+let
+
+/*let array = [1, 2, 'one'];
+
+array.forEach((value, index, array) => {
+    console.log(value, index, array);
+});*/
+
+/*let timer = setInterval(() => {
+    console.log(Date.now());
+}, 500);
+
+
+let date = new Date();
+let methods;
+
+date.setMinutes(date.getMinutes() + 10);
+
+date = date.toLocaleString('ru-RU', {
+    year: '2-digit',
+    month: 'short',
+    weekday: 'long'
+});
+
+console.log(date);*/
+/*
+function MultiplyMaker(a) {
+    let value = 1;
+    return function () {
+        return value *= a;
+    }
+}
+let multiply = MultiplyMaker(3);
+*/
+
+// let html = document.documentElement;
+// let body = document.body;
+// let div = body.querySelector('div');
+// let ul = body.querySelector('ul');
+// let li = body.querySelector('li');
+// let pause = 200;
+//
+// console.log(body);
+//
+// //Bubble
+// html.addEventListener('click', callback, false);
+// body.addEventListener('click', callback, false);
+// div.addEventListener('click', callback, false);
+// html.addEventListener('click', callback, false);
+// ul.addEventListener('click', callback, false);
+// li.addEventListener('click', callback, false);
+//
+// //Cature
+// html.addEventListener('click', callback, true);
+// body.addEventListener('click', callback, true);
+// div.addEventListener('click', callback, true);
+// html.addEventListener('click', callback, true);
+// ul.addEventListener('click', callback, true);
+// li.addEventListener('click', callback, true);
+//
+//
+//
+// function callback(e) {
+//     let ms = e.timeout = (e.timeout + pause) || 0;
+//     let target = e.currentTarget;
+//
+//     setTimeout(function () {
+//         target.classList.add('highlight');
+//         setTimeout(function () {
+//             target.classList.remove('highlight');
+//         }, pause);
+//     }, ms);
+//
+// }
+
+/*
+let user = {
+    firstName: 'Vasyok',
+    sayMyName: function () {
+        console.log( this.firstName );
+    }
+};
+//user.sayMyName();
+setTimeout(user.sayMyName.bind(user), 1000);
+*/
+
+
+/*function sumArgs() {
+    let args = [].slice.call(arguments);
+    return args.reduce(function (a, b) {
+        return a + b;
+    })
+}
+
+console.log( sumArgs(5,2,3));*/
+/*
+
+let user = {
+    firstName: "Василий",
+    surname: "Петров",
+    patronym: "Иванович"
+};
+
+function showFullName(firstPart, lastPart) {
+    alert( this[firstPart] + " " + this[lastPart] );
+}
+
+// f.call(контекст, аргумент1, аргумент2, ...)
+showFullName.call(user, 'firstName', 'surname') // "Василий Петров"
+showFullName.call(user, 'firstName', 'patronym') // "Василий Иванович"
+
+*/
+/*
+function showFullName() {
+    alert( this.firstName + " " + this.lastName );
+}
+
+let user = {
+    firstName: "Василий",
+    lastName: "Петров"
+};
+showFullName.call(user);
+*/
+
+
+/*
+function Article() {
+    this.created = new Date();
+    Article.count++;
+    Article.last = this.created;
+
+    Article.showStats = function() {
+        return console.log(`Всего: ${this.count}, Последняя: ${this.last}`);
+    }
+}
+Article.count = 0;
+
+new Article();
+new Article();
+
+
+Article.showStats(); // Всего: 2, Последняя: (дата)
+
+new Article();
+
+Article.showStats(); // Всего: 3, Последняя: (дата)
+*/
+
+/*
 function User(fullName) {
     this.fullName = fullName;
 
@@ -20,6 +169,7 @@ function User(fullName) {
 
 }
 console.dir(User);
+*/
 
 
 /*function User(fullName) {
@@ -48,11 +198,11 @@ console.dir(User);
 
 }*/
 
-let vasya = new User('Хуй Булыжников');
+/*let vasya = new User('Хуй Булыжников');
 console.log(vasya.firstName);
 console.log(vasya.lastName);
 vasya.lastName = 'Dolboeb';
-console.log(vasya.lastName);
+console.log(vasya.lastName);*/
 
 /*User.prototype = {
     get firstName(){
