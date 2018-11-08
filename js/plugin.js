@@ -52,7 +52,7 @@ timer.init({
 
 function startTimer(e) {
     const seconds = parseInt(this.dataset.time);
-    console.log(seconds);
+    timer.start(seconds);
 }
 
 buttons.forEach(btn => btn.addEventListener('click', startTimer));
